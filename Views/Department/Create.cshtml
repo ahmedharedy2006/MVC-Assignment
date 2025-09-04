@@ -1,0 +1,14 @@
+@model MVC_Assignment.Models.Department
+@{
+    ViewData["Title"] = "Add Department";
+}
+<h2>Add Department</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+    <a class="btn btn-secondary" href="/Department">Cancel</a>
+</form>
+<a href="/Student">View Students</a>
